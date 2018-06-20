@@ -126,6 +126,9 @@ alias zotero='/home/jose/Documents/Science/Software/Zotero_linux-x86_64/zotero'
 eval "$(direnv hook bash)"
 export GPG_TTY=$(tty)
 
+
+
+export PATH="$HOME/bin/julia_0.6/bin:$PATH"
 export PATH="$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/home/jose/.cfg/ --work-tree=/home/josei'
 export PATH=$PATH:$HOME/bin
