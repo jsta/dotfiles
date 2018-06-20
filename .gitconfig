@@ -3,8 +3,9 @@
 	email = stachel2@msu.edu
 	signingkey = 6C4091DFAC88D465
 [core]
-	filemode = false
+	fileMode = false
 	autocrlf = input
+	excludesfiles = /home/jose/.gitignore_global
 [push]
 	default = simple
 [credential]
