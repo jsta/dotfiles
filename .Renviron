@@ -2,3 +2,4 @@ _R_CHECK_LENGTH_1_CONDITION=true
 TWITTER_PAT=/home/jose/.rtweet_token.rds
 TWITTER_PAT=/home/jose//twitter_token.rds
 TWITTER_PAT=/home/jose/.rtweet_token.rds
+JULIA_HOME=/home/jose/bin/julia_0.6/bin
