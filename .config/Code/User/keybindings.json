@@ -1,0 +1,16 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+enter",
+        "command": "-editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    { "key": "ctrl+enter",           "command": "python.execSelectionInTerminal",
+        "when": "editorFocus && editorLangId == 'python'" },
+    {
+        "key": "f12",
+        "command": 
+        "workbench.action.terminal.focus"
+    },
+    { "key": "f11",                "command": "workbench.action.focusFirstEditorGroup" },
+]

@@ -1,0 +1,10 @@
+{
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+      },
+      "editor.fontSize": 16,
+    
+}
