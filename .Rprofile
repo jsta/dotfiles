@@ -20,6 +20,7 @@
 if (interactive()) {
   suppressMessages(require(devtools))
   suppressMessages(require(remedy))
+  suppressMessages(require(datapasta))
 }
 
 options(error = NULL,
