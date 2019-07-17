@@ -5,6 +5,8 @@
         "comments": true,
         "strings": true
       },
-      "editor.fontSize": 16,
-    
+    "editor.fontSize": 16,
+    "latex-workshop.intellisense.package.enabled": true,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "workbench.editor.enablePreview": false
 }
