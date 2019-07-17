@@ -31,3 +31,4 @@ options(error = NULL,
 )
 
 Sys.setenv(NOT_CRAN = "true")
+Sys.setenv("_R_S3_METHOD_REGISTRATION_NOTE_OVERWRITES_" = 0)
