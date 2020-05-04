@@ -133,3 +133,4 @@ export PATH="$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/home/jose/.cfg/ --work-tree=/home/josei'
 export PATH=$PATH:$HOME/bin
 alias dotfiles='git --git-dir=/home/jose/.dotfiles/ --work-tree=/home/jose'
+export XDG_CONFIG_HOME="$HOME/.config/rstudio"

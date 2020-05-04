@@ -7,6 +7,9 @@
     "highlight_r_function_calls": true,
     "font_size_points": 12,
     "editor_theme": "rscodeio",
+    "file_monitor_ignored_components": [	
+	"data"
+    ],	
     "default_project_location": "~/R/scripts",
     "real_time_spellchecking": false,
     "rmd_preferred_template_path": "/home/jose/R/x86_64-pc-linux-gnu-library/3.5/pinp/rmarkdown/templates/pdf",
