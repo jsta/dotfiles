@@ -115,20 +115,24 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# prevent terminal lock when press ctrl+s
 stty -ixon
 
 alias zotero='/home/jose/Documents/Science/Software/Zotero_linux-x86_64/zotero'
-
-# added by Anaconda3 installer (set per project now)
-# export PATH="/home/jose/anaconda3/bin:$PATH"
 
 # direnv hook for bash (jsta)
 eval "$(direnv hook bash)"
 export GPG_TTY=$(tty)
 
-
 export PATH="$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/home/jose/.cfg/ --work-tree=/home/josei'
+
+# enable command line bin scripts
 export PATH=$PATH:$HOME/bin
+
+# manage dotfiles as a git repo
 alias dotfiles='git --git-dir=/home/jose/.dotfiles/ --work-tree=/home/jose'
+
+# get rstudio to find config files
 export XDG_CONFIG_HOME="$HOME/.config/rstudio"
