@@ -119,20 +119,20 @@ fi
 # prevent terminal lock when press ctrl+s
 stty -ixon
 
-alias zotero='/home/jose/Documents/Science/Software/Zotero_linux-x86_64/zotero'
+alias zotero='/home/julie/Documents/Science/Software/Zotero_linux-x86_64/zotero'
 
 # direnv hook for bash (jsta)
 eval "$(direnv hook bash)"
 export GPG_TTY=$(tty)
 
 export PATH="$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH"
-alias config='/usr/bin/git --git-dir=/home/jose/.cfg/ --work-tree=/home/josei'
+alias config='/usr/bin/git --git-dir=/home/julie/.cfg/ --work-tree=/home/juliei'
 
 # enable command line bin scripts
 export PATH=$PATH:$HOME/bin
 
 # manage dotfiles as a git repo
-alias dotfiles='git --git-dir=/home/jose/.dotfiles/ --work-tree=/home/jose'
+alias dotfiles='git --git-dir=/home/julie/.dotfiles/ --work-tree=/home/julie'
 
 # get rstudio to find config files
 export XDG_CONFIG_HOME="$HOME/.config/rstudio"
