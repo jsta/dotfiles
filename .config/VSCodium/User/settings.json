@@ -1,3 +1,11 @@
 {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "files.associations": {
+        "*.Rmd": "tex"
+    },
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false
 }
