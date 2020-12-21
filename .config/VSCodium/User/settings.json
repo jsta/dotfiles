@@ -14,6 +14,11 @@
 
     "python.linting.pylintArgs": [
 	"--errors-only",
-	"--generated-members=numpy.* ,torch.* ,cv2.* , cv.*"
-    ]
+	"--generated-members=numpy.* ,torch.* ,cv2.* , cv.*",
+	"--extension-pkg-whitelist = numpy"
+    ],
+    "breadcrumbs.enabled": true,
+    "python.pythonPath": "/usr/bin/python2",
+    "r.bracketedPaste": true,
+    "r.rterm.linux": "\"/home/julie/.local/bin/radian\""
 }
