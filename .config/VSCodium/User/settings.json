@@ -20,5 +20,7 @@
     "breadcrumbs.enabled": true,
     "python.pythonPath": "/usr/bin/python2",
     "r.bracketedPaste": true,
-    "r.rterm.linux": "\"/home/julie/.local/bin/radian\""
+    "r.rterm.linux": "/home/julie/.local/bin/radian",
+    "r.sessionWatcher": true,
+    "r.rpath.linux": "/usr/bin/R"
 }
