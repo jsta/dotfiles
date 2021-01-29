@@ -6,11 +6,67 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     { "key": "ctrl+enter",           "command": "python.execSelectionInTerminal",
-        "when": "editorFocus && editorLangId == 'python'" },
+        "when": "editorFocus && editorLangId == 'python'" },           
     {
         "key": "f12",
         "command": 
         "workbench.action.terminal.focus"
     },
-    { "key": "f11",                "command": "workbench.action.focusFirstEditorGroup" },
+    {
+        "key": "f11",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-problems.action.showQuickFixes",
+        "when": "problemFocus"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-settings.action.editFocusedSetting",
+        "when": "inSettingsSearch"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "breadcrumbs.toggle"
+    },
+    {
+        "description": "knit to html and md",
+        "key": "ctrl+shift+k",
+        "command": "r.runCommandWithEditorPath",
+        "when": "editorTextFocus",
+        "args": "rmarkdown::render(\"$$\", output_dir = \".\", clean = TRUE)"
+    },
+    {
+        "description": "remedy align arrow",
+        "key": "ctrl+meta+,",
+        "command": "r.runCommandWithSelectionOrWord",
+        "when": "editorTextFocus",
+        "args": "remedy::align_arrow(\"$$\")"
+    },
+    {
+        "description": "reprex selection",
+        "key": "ctrl+;",
+        "command": "r.runCommand",
+        "when": "editorTextFocus",
+        "args": "reprex::reprex_selection"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    }
 ]
