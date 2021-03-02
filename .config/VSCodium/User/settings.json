@@ -17,10 +17,13 @@
 	"--generated-members=numpy.* ,torch.* ,cv2.* , cv.*",
 	"--extension-pkg-whitelist = numpy"
     ],
-    "breadcrumbs.enabled": true,
+    "breadcrumbs.enabled": false,
     "python.pythonPath": "/usr/bin/python2",
     "r.bracketedPaste": true,
     "r.rterm.linux": "/home/julie/.local/bin/radian",
     "r.sessionWatcher": true,
-    "r.rpath.linux": "/usr/bin/R"
+    "r.rpath.linux": "/usr/bin/R",
+    "workbench.colorTheme": "Witch Hazel Hypercolor",
+    "python.dataScience.enableCellCodeLens": false,
+    "python.dataScience.decorateCells": false
 }
