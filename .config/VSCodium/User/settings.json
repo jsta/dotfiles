@@ -25,5 +25,9 @@
     "r.rpath.linux": "/usr/bin/R",
     "workbench.colorTheme": "Witch Hazel Hypercolor",
     "python.dataScience.enableCellCodeLens": false,
-    "python.dataScience.decorateCells": false
+    "python.dataScience.decorateCells": false,
+    "typescript.suggest.completeFunctionCalls": true,
+    "docsView.documentationView.updateMode": "sticky",
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true
 }
