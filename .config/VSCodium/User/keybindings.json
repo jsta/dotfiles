@@ -5,12 +5,14 @@
         "command": "-editor.action.insertLineAfter",
         "when": "editorTextFocus && !editorReadonly"
     },
-    { "key": "ctrl+enter",           "command": "python.execSelectionInTerminal",
-        "when": "editorFocus && editorLangId == 'python'" },           
+    {
+        "key": "ctrl+enter",
+        "command": "python.execSelectionInTerminal",
+        "when": "editorFocus && editorLangId == 'python'"
+    },
     {
         "key": "f12",
-        "command": 
-        "workbench.action.terminal.focus"
+        "command": "workbench.action.terminal.focus"
     },
     {
         "key": "f11",
@@ -92,5 +94,20 @@
         "key": "f12",
         "command": "-editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
     }
 ]
