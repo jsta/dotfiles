@@ -109,5 +109,10 @@
         "key": "ctrl+shift+\\",
         "command": "-editor.action.jumpToBracket",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-notebook.cell.execute",
+        "when": "notebookCellListFocused"
     }
 ]
