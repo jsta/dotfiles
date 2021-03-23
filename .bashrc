@@ -119,7 +119,8 @@ fi
 # prevent terminal lock when press ctrl+s
 stty -ixon
 
-alias zotero='/home/julie/Documents/Science/Software/Zotero_linux-x86_64/zotero'
+# define executable shortcuts
+alias zot='/home/julie/Documents/Science/Software/Zotero_linux-x86_64/zotero'
 
 # direnv hook for bash (jsta)
 eval "$(direnv hook bash)"
@@ -130,9 +131,40 @@ alias config='/usr/bin/git --git-dir=/home/julie/.cfg/ --work-tree=/home/juliei'
 
 # enable command line bin scripts
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.TinyTex/bin
 
 # manage dotfiles as a git repo
 alias dotfiles='git --git-dir=/home/julie/.dotfiles/ --work-tree=/home/julie'
 
 # get rstudio to find config files
 export XDG_CONFIG_HOME="$HOME/.config/rstudio"
+export XDG_CONFIG_DIRS="/etc"
+
+# add open shortcut
+alias open='xdg-open'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export GLM_PATH=$HOME/Documents/Science/Models/GLM_docker/glm
+
+export mediagoblin_path=$HOME/Documents/Personal/software/mediagoblin 
+
+export PYTHONSTARTUP=$HOME/.config/python/python-startup.py
+
