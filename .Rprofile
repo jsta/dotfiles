@@ -129,3 +129,7 @@ cp = function(path = NULL) {
 ####
 options(vsc.rstudioapi = TRUE)
 options(tibble.width = Inf)
+
+options(languageserver.formatting_style = function(options) {
+  styler::tidyverse_style(strict = FALSE)
+})
