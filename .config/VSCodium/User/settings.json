@@ -1,7 +1,7 @@
 {
     "editor.wordWrap": "on",
     "files.associations": {
-        "*.Rmd": "tex"
+        "*.Rmd": "rmd"
     },
     "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
@@ -28,5 +28,6 @@
     "typescript.suggest.completeFunctionCalls": true,
     "docsView.documentationView.updateMode": "sticky",
     "python.formatting.provider": "black",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "r.alwaysUseActiveTerminal": true
 }
