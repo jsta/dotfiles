@@ -133,3 +133,6 @@ options(tibble.width = Inf)
 options(languageserver.formatting_style = function(options) {
   styler::tidyverse_style(strict = FALSE)
 })
+
+# https://stackoverflow.com/a/38206498/3362993
+formals(quit)$save <- formals(q)$save <- "no"
