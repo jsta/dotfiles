@@ -29,5 +29,15 @@
     "docsView.documentationView.updateMode": "sticky",
     "python.formatting.provider": "black",
     "editor.formatOnSave": true,
-    "r.alwaysUseActiveTerminal": true
+    "r.alwaysUseActiveTerminal": true,
+    "githubPullRequests.telemetry.enabled": false,
+    "editor.showFoldingControls": "always",
+    "breadcrumbs.showVariables": false,
+    "outline.showVariables": false,
+    "breadcrumbs.showStrings": false,
+    "outline.showNumbers": false,
+    "breadcrumbs.showNumbers": false,
+    "outline.showStructs": false,
+    "outline.showModules": false,
+    "breadcrumbs.showModules": false
 }
