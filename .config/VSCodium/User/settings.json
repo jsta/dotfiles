@@ -39,5 +39,6 @@
     "breadcrumbs.showNumbers": false,
     "outline.showStructs": false,
     "outline.showModules": false,
-    "breadcrumbs.showModules": false
+    "breadcrumbs.showModules": false,
+    "breadcrumbs.enabled": false
 }
