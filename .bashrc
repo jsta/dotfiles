@@ -168,3 +168,9 @@ export mediagoblin_path=$HOME/Documents/Personal/software/mediagoblin
 
 export PYTHONSTARTUP=$HOME/.config/python/python-startup.py
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# manage rsync filter files as a git repo
+alias rsyncfiles='git --git-dir=$HOME/.rsync/ --work-tree=$HOME'
+
