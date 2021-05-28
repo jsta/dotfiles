@@ -119,15 +119,12 @@ fi
 # prevent terminal lock when press ctrl+s
 stty -ixon
 
-# define executable shortcuts
-alias zot='/home/julie/Documents/Science/Software/Zotero_linux-x86_64/zotero'
-
 # direnv hook for bash (jsta)
 eval "$(direnv hook bash)"
 export GPG_TTY=$(tty)
 
 export PATH="$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH"
-alias config='/usr/bin/git --git-dir=/home/julie/.cfg/ --work-tree=/home/juliei'
+alias config='/usr/bin/git --git-dir=/home/jemma/.cfg/ --work-tree=/home/jemma'
 
 # enable command line bin scripts
 export PATH=$PATH:$HOME/bin
@@ -135,7 +132,7 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.TinyTex/bin
 
 # manage dotfiles as a git repo
-alias dotfiles='git --git-dir=/home/julie/.dotfiles/ --work-tree=/home/julie'
+alias dotfiles='git --git-dir=/home/jemma/.dotfiles/ --work-tree=/home/jemma'
 
 # get rstudio to find config files
 export XDG_CONFIG_HOME="$HOME/.config/rstudio"
@@ -149,14 +146,14 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/jemma/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/jemma/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jemma/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="$HOME/anaconda3/bin:$PATH"
+        export PATH="/home/jemma/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -164,12 +161,10 @@ unset __conda_setup
 
 export GLM_PATH=$HOME/Documents/Science/Models/GLM_docker/glm
 
-export mediagoblin_path=$HOME/Documents/Personal/software/mediagoblin 
-
 export PYTHONSTARTUP=$HOME/.config/python/python-startup.py
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 # manage rsync filter files as a git repo
 alias rsyncfiles='git --git-dir=$HOME/.rsync/ --work-tree=$HOME'
