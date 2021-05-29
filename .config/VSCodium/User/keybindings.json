@@ -145,5 +145,10 @@
     {
         "key": "ctrl+shift+b",
         "command": "r.install"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "workbench.action.terminal.runSelectedText",
+        "when": "editorLangId !='python' && editorLangId != 'r' && editorTextFocus"
     }
 ]
