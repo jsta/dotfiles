@@ -150,5 +150,15 @@
         "key": "ctrl+enter",
         "command": "workbench.action.terminal.runSelectedText",
         "when": "editorLangId !='python' && editorLangId != 'r' && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "latex-workshop.build",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-latex-workshop.build",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
     }
 ]
