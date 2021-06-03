@@ -5,9 +5,9 @@ i.First <- function() {
   help_type = 'text',
   width = 80,
   github.user = 'jsta',
-  devtools.name = 'Joseph Stachelek',
+  devtools.name = 'J Stachelek',
   devtools.desc = list(
-      `Authors@R` = paste0("person(\"Joseph\", \"Stachelek\", ",
+      `Authors@R` = paste0("person(\"J\", \"Stachelek\", ",
 	"comment = c(ORCID = \"0000-0002-5924-2464\"), ",
 	"role = c(\"aut\", \"cre\"), \n email = \"stachel2@msu.edu\")"),
        License = 'GPL',
@@ -25,7 +25,7 @@ if (interactive()) {
 
 options(error = NULL,
         usethis.description = list(
-          `Authors@R` = 'person("Joseph", "Stachelek", email = "stachel2@msu.edu", role = c("aut", "cre"))',
+          `Authors@R` = 'person("J", "Stachelek", email = "stachel2@msu.edu", role = c("aut", "cre"))',
           License = "MIT + file LICENSE"
         )
 )
