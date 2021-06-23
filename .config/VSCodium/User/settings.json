@@ -7,15 +7,13 @@
     "explorer.confirmDelete": false,
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.enablePreview": false, 
-
+    "workbench.editor.enablePreview": false,
     // Severity of Pylint message type 'Convention/C'.
     "python.linting.pylintCategorySeverity.convention": "Hint",
-
     "python.linting.pylintArgs": [
-	"--errors-only",
-	"--generated-members=numpy.* ,torch.* ,cv2.* , cv.*",
-	"--extension-pkg-whitelist = numpy"
+        "--errors-only",
+        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*",
+        "--extension-pkg-whitelist = numpy"
     ],
     "python.pythonPath": "/usr/bin/python2",
     "r.bracketedPaste": true,
@@ -28,7 +26,6 @@
     "typescript.suggest.completeFunctionCalls": true,
     "docsView.documentationView.updateMode": "sticky",
     "python.formatting.provider": "black",
-    "editor.formatOnSave": true,
     "r.alwaysUseActiveTerminal": true,
     "githubPullRequests.telemetry.enabled": false,
     "editor.showFoldingControls": "always",
@@ -40,5 +37,6 @@
     "outline.showStructs": false,
     "outline.showModules": false,
     "breadcrumbs.showModules": false,
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "editor.formatOnSave": true
 }
