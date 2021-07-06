@@ -152,6 +152,11 @@
         "when": "editorLangId !='python' && editorTextFocus"
     },
     {
+        "key": "ctrl+enter",
+        "command": "r.runSelection",
+        "when": "editorLangId == 'r' && editorTextFocus"
+    },    
+    {
         "key": "ctrl+shift+k",
         "command": "latex-workshop.build",
         "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
